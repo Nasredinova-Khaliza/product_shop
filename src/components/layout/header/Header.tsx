@@ -8,7 +8,7 @@ const Header = () => {
 	const navigate = useNavigate();
 
 	const handleLogOut = () => {
-		localStorage.removeItem("auth_token");
+		localStorage.removeItem("token");
 		navigate("/login");
 	};
 	return (
