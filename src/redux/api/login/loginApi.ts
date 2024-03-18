@@ -5,7 +5,7 @@ const api = index.injectEndpoints({
 	endpoints: (builder) => ({
 		login: builder.mutation<LOGIN.LoginResponse, LOGIN.LoginRequest>({
 			query: (newData) => ({
-				url: "users",
+				url: "login",
 				method: "POST",
 				body: newData,
 			}),
